@@ -1,0 +1,25 @@
+{
+  "project_name": "<PROJECT_NAME>",
+  "org": "<GITHUB_ORG>",
+  "repo": "<GITHUB_ORG>/<GITHUB_REPO>",
+  "project_number": "<PROJECT_NUMBER>",
+  "project_id": "<PROJECT_ID>",
+  "fields": {
+    "BoltStatus": "<FIELD_ID>",
+    "Intent": "<FIELD_ID>",
+    "Bolt": "<FIELD_ID>",
+    "Lock": "<FIELD_ID>"
+  },
+  "options": {
+    "BoltStatus": {
+      "ready": "<OPTION_ID>",
+      "blocked": "<OPTION_ID>",
+      "in-progress": "<OPTION_ID>",
+      "done": "<OPTION_ID>"
+    },
+    "Lock": {
+      "locked": "<OPTION_ID>",
+      "unlocked": "<OPTION_ID>"
+    }
+  }
+}
