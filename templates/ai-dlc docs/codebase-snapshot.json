@@ -1,0 +1,77 @@
+{
+  "$schema": "Codebase Snapshot - AI-DLC が既存コードベースを分析した結果のキャッシュ",
+  "analyzedAt": "YYYY-MM-DDTHH:MM:SSZ",
+  "project": {
+    "name": "",
+    "description": "",
+    "type": "monorepo | single-package",
+    "rootDir": ""
+  },
+  "techStack": {
+    "languages": [{ "name": "", "version": "", "usage": "" }],
+    "frameworks": [{ "name": "", "version": "", "purpose": "" }],
+    "buildTools": [{ "name": "", "version": "", "configFile": "" }],
+    "infrastructure": [{ "name": "", "purpose": "" }],
+    "testingTools": [{ "name": "", "purpose": "" }]
+  },
+  "directoryStructure": {
+    "description": "主要ディレクトリとその役割",
+    "directories": [
+      { "path": "", "purpose": "", "type": "application | infrastructure | shared | test | config" }
+    ]
+  },
+  "packages": [
+    {
+      "name": "",
+      "path": "",
+      "type": "application | infrastructure | shared | test",
+      "description": "",
+      "dependencies": ["(他パッケージ名)"]
+    }
+  ],
+  "apis": [
+    {
+      "method": "GET | POST | PUT | DELETE | RPC",
+      "path": "",
+      "description": "",
+      "package": "",
+      "authRequired": true
+    }
+  ],
+  "dataModels": [
+    {
+      "name": "",
+      "type": "database-table | document | proto-message | type-definition",
+      "package": "",
+      "fields": [{ "name": "", "type": "", "constraints": "" }],
+      "relationships": [{ "target": "", "type": "one-to-one | one-to-many | many-to-many" }]
+    }
+  ],
+  "domainEntities": [
+    {
+      "name": "",
+      "description": "",
+      "boundedContext": "",
+      "relatedModels": ["(dataModels の name)"],
+      "relatedApis": ["(apis の path)"]
+    }
+  ],
+  "conventions": {
+    "namingPatterns": {
+      "files": "",
+      "directories": "",
+      "functions": "",
+      "types": ""
+    },
+    "codePatterns": [{ "pattern": "", "description": "", "example": "" }],
+    "branchStrategy": "",
+    "testStrategy": ""
+  },
+  "qualityIndicators": {
+    "hasLinting": false,
+    "hasTypeChecking": false,
+    "hasCI": false,
+    "testCoverage": "high | medium | low | none | unknown",
+    "knownTechDebt": [""]
+  }
+}
