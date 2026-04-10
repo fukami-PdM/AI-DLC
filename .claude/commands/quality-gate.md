@@ -60,7 +60,7 @@ Phase 4 の各ステップに入る前に、以下の成果物を読み込む:
 ### 成果物の生成
 
 - `aidlc-docs/quality-gate/report.md` を生成する
-- テンプレート: `aidlc-workflows/templates/aidlc-docs/quality-gate/report.md` を使用
+- テンプレート: `templates/ai-dlc docs/quality-gate/report.md` を使用
 
 ### 完了条件
 

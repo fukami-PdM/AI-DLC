@@ -10,18 +10,18 @@
 
 ## スキルのセットアップ（自動）
 
-Phase 3 開始時に、Bolt パイプラインに必要なスキルを自動配置する。テンプレートは `aidlc-workflows/templates/skills/` に格納されている。
+Phase 3 開始時に、Bolt パイプラインに必要なスキルを自動配置する。テンプレートは `templates/skills/` に格納されている。
 
 ```bash
 mkdir -p .claude/skills
-cp -r aidlc-workflows/templates/skills/. .claude/skills/
+cp -r templates/skills/. .claude/skills/
 ```
 
 > **AI への指示**: Phase 3 に入ったとき、テンプレートとデプロイ先のスキルファイルを比較し、差分がある場合は上記コマンドで再デプロイすること。`.claude/skills/run-bolt/SKILL.md` が存在しない場合も同様に実行する。
 >
 > ```bash
 > # 差分チェック（差分があれば再デプロイ）
-> diff -rq aidlc-workflows/templates/skills/ .claude/skills/ 2>/dev/null || cp -r aidlc-workflows/templates/skills/. .claude/skills/
+> diff -rq templates/skills/ .claude/skills/ 2>/dev/null || cp -r templates/skills/. .claude/skills/
 > ```
 
 ## GitHub Projects v2 設定
@@ -61,7 +61,7 @@ Bolt パイプラインはプロジェクト固有の設定を `aidlc-docs/confi
 - **Gate Commands**: CI 相当のチェックコマンド
 - **Review Configuration**: AI レビューの設定（オプション）
 
-テンプレート: `aidlc-workflows/templates/aidlc-docs/config/project-adapter.md`
+テンプレート: `templates/ai-dlc docs/config/project-adapter.md`
 
 ### AIの行動
 
@@ -103,7 +103,7 @@ Bolt パイプラインはプロジェクト固有の設定を `aidlc-docs/confi
    - **Bolt パイプライン**: `/run-bolt` スキルで実行する。手順の詳細は `.claude/skills/run-bolt/SKILL.md` を参照
    - 失敗時: コンテキストにエラーログを追加して再生成（max 1回）。2回失敗 → エスカレーション
 
-   - **ハーネス評価**: Bolt 単位の軽量チェック（Ship 直後）と Intent 全量分析（全 Bolt 完了後）を実行する。詳細は `aidlc-workflows/references/harness-eval.md` を参照
+   - **ハーネス評価**: Bolt 単位の軽量チェック（Ship 直後）と Intent 全量分析（全 Bolt 完了後）を実行する。詳細は `References/harness-eval.md` を参照
 
 3. **エスカレーション Bolt の扱い**
    - 2回失敗でエスカレーションされた Bolt は `blocked` に戻す

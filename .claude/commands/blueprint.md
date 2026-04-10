@@ -265,12 +265,12 @@ Unit が1つだけの場合も同じフォーマットを使用する。
 1. **Unit設計を生成する**
    - `aidlc-docs/blueprint/units/{unit-name}/functional-design.md` を生成する
    - 今回の Unit で追加・変更するスコープのみを記述する
-   - テンプレート: `aidlc-workflows/templates/aidlc-docs/blueprint/units/unit-functional-design.md` を使用
+   - テンプレート: `templates/ai-dlc docs/blueprint/units/unit-functional-design.md` を使用
 
 2. **全体設計に統合する**
    - `aidlc-docs/blueprint/functional-design.md` を更新する（初回は新規作成）
    - Unit設計の内容を全体設計にマージし、整合性を確認する
-   - テンプレート: `aidlc-workflows/templates/aidlc-docs/blueprint/functional-design.md` を使用
+   - テンプレート: `templates/ai-dlc docs/blueprint/functional-design.md` を使用
 
 ### 自己レビュー（人間に提示する前に実行）
 
@@ -383,12 +383,12 @@ Unit が1つだけの場合も同じフォーマットを使用する。
 1. **Unit設計を生成する**
    - `aidlc-docs/blueprint/units/{unit-name}/architecture.md` を生成する
    - 今回の Unit で追加・変更するスコープのみを記述する
-   - テンプレート: `aidlc-workflows/templates/aidlc-docs/blueprint/units/unit-architecture.md` を使用
+   - テンプレート: `templates/ai-dlc docs/blueprint/units/unit-architecture.md` を使用
 
 2. **全体設計に統合する**
    - `aidlc-docs/blueprint/architecture.md` を更新する（初回は新規作成）
    - Unit設計の内容を全体設計にマージし、整合性を確認する
-   - テンプレート: `aidlc-workflows/templates/aidlc-docs/blueprint/architecture.md` を使用
+   - テンプレート: `templates/ai-dlc docs/blueprint/architecture.md` を使用
 
 ### 自己レビュー（人間に提示する前に実行）
 
@@ -644,7 +644,7 @@ Unit が1つだけの場合も同じフォーマットを使用する。
 ### 成果物の生成
 
 - `aidlc-docs/blueprint/units/{unit-name}/bolt-plan.md` を生成する
-- テンプレート: `aidlc-workflows/templates/aidlc-docs/blueprint/units/bolt-plan.md` を使用
+- テンプレート: `templates/ai-dlc docs/blueprint/units/bolt-plan.md` を使用
 - `qa/suites/bolt/{unit-name}/` 配下に Bolt Suite ファイルを生成する
 - `qa/suites/unit/{unit-name}.yml` を生成する
 - `qa/suites/inception/full.yml` を生成または更新する
@@ -677,7 +677,7 @@ Unit が1つだけの場合も同じフォーマットを使用する。
 Phase 3 の Bolt パイプラインは `aidlc-docs/config/project-adapter.md` を必要とする。Approval Gate の承認前に、このファイルを作成・確認する。
 
 1. **`aidlc-docs/config/project-adapter.md` が存在するか確認する**
-   - 存在しない場合、テンプレート（`aidlc-workflows/templates/aidlc-docs/config/project-adapter.md`）から作成する
+   - 存在しない場合、テンプレート（`templates/ai-dlc docs/config/project-adapter.md`）から作成する
 2. **プロジェクトの技術スタック・設計成果物をもとに Project Adapter を定義する**
    - Workstreams（実装エージェント、Trigger paths、Owned paths、Skills）
    - Gate Commands（CI 相当のチェックコマンド）
